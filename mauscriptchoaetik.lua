@@ -17,7 +17,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0, 40, 0, 40)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=104864079364709"  -- 👈 đổi ID ảnh nút mở menu tại đây (ảnh roblox)
+ImageButton.Image = "http://www.roblox.com/asset/?id=15059956542"  -- 👈 đổi ID ảnh nút mở menu tại đây (ảnh roblox)
 
 UICorner.CornerRadius = UDim.new(1, 10)
 UICorner.Parent = ImageButton
@@ -32,7 +32,7 @@ repeat wait() until game:IsLoaded()
 
 -- 🪟 Cửa sổ chính
 local Window = Fluent:CreateWindow({
-	Title = "tâm dz =}",         -- 👈 đổi thành tên script của bạn
+	Title = "Téo 🍎v2 update =}",         -- 👈 đổi thành tên script của bạn
 	SubTitle = "vip pro💎😍",              -- 👈 đổi mô tả phụ
 	TabWidth = 157,
 	Size = UDim2.fromOffset(450, 300),
@@ -45,15 +45,39 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
 	Main0 = Window:AddTab({ Title = "một số kênh🤓" }),  -- 👈 đổi tên tab 1
 	Main1 = Window:AddTab({ Title = "grow a gaden 🌱🌴🌵🌲" }),  -- 👈 đổi tên tab 2
-	Main2 = Window:AddTab({ Title = "bran rót💩" }),     -- 👈 đổi tên tab 3
-	Main3 = Window:AddTab({ Title = "99 đêm🥷" }),        -- 👈 đổi tên tab 4
-	Main4 = Window:AddTab({ Title = "blox fruit🍎" }),    -- 👈 đổi tên tab 5
-	Main5 = Window:AddTab({ Title = "plan vs branro🌲🐘t" }) -- 👈 đổi tên tab 6
-	Main5 = Window:AddTab({ Title = "packqua" }) -- 👈 đổi tên tab 7
+	Main2 = Window:AddTab({ Title = "99 đêm🥷" }),        -- 👈 đổi tên tab 3
+	Main3 = Window:AddTab({ Title = "blox fruit🍎" }),    -- 👈 đổi tên tab 4
 }
 
 ------------------------------------------------
 -- TAB 1: Các kênh tiktok
+------------------------------------------------
+Tabs.Main0:AddButton({
+	Title = "tiktok bạn:)",              -- 👈 tên nút
+	Description = "oách xà lách vô cùng",-- 👈 mô tả nút
+	Callback = function()
+		setclipboard("https://www.tiktok.com/@jannie3342?_t=ZS-90QsJQ5j0NO&_r=1")  -- 👈 link sao chép
+	end
+})
+
+Tabs.Main0:AddButton({
+	Title = "tik",
+	Description = "làm chơi thui",
+	Callback = function()
+		setclipboard("https://www.tiktok.com/@b.yt03?_t=ZS-90QsHokNlwN&_r=1")     -- 👈 link khác
+	end
+})
+
+Tabs.Main0:AddButton({
+	Title = "tiktok",
+	Description = "fl tiktok để biết thêm nhiều script",
+	Callback = function()
+		setclipboard("https://www.tiktok.com/@b.yt03?_t=ZS-90QsHmSjaiu&_r=1")
+	end
+})
+
+------------------------------------------------
+-- TAB 2: Ví dụ thêm script
 ------------------------------------------------
 Tabs.Main0:AddButton({
 	Title = "tiktok bạn:)",              -- 👈 tên nút
@@ -94,19 +118,8 @@ Tabs.Main1:AddButton({
 	end
 })
 
-Tabs.Main2:AddButton({
-	Title = "spam brinrot 🌱",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
-	Callback = function()
-		local Settings = {
-			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
-			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
-		}
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/thinhdeptrai-netizen/SAB-OP-HUB/refs/heads/main/Op-RAUSENIA-HUB.V1.0"))() -- 👈 link script tải
-	end
-})
 
-Tabs.Main3:AddButton({
+Tabs.Main2:AddButton({
 	Title = "99 night 🌱",                             -- 👈 tên nút hiển thị
 	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
 	Callback = function()
@@ -118,32 +131,7 @@ Tabs.Main3:AddButton({
 	end
 })
 
-Tabs.Main4:AddButton({
-	Title = "blox fruit 🌱",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
-	Callback = function()
-		local Settings = {
-			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
-			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
-		}
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))() -- 👈 link script tải
-	end
-})
-
-Tabs.Main5:AddButton({
-	Title = "plans à brainrot 🌱",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
-	Callback = function()
-		local Settings = {
-			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
-			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
-		}
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
- -- 👈 link script tải
-	end
-})
-
-Tabs.Main6:AddButton({
+Tabs.Main3:AddButton({
 	Title = "fly 🌱",                             -- 👈 tên nút hiển thị
 	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
 	Callback = function()
@@ -156,7 +144,7 @@ Tabs.Main6:AddButton({
 	end
 })
 
-Tabs.Main6:AddButton({
+Tabs.Main3:AddButton({
 	Title = "wallhop 🌱",                             -- 👈 tên nút hiển thị
 	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
 	Callback = function()
@@ -168,4 +156,3 @@ Tabs.Main6:AddButton({
  -- 👈 link script tải
 	end
 })
-
